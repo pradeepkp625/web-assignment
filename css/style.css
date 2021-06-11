@@ -1,0 +1,145 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.side__navbar{
+    background-color: #626262;
+    width: 50px;
+    padding: 10px 5px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.navlink{
+    cursor: pointer;
+}
+.home__content{
+    display: flex;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h1{
+    color: #9f1897;
+}
+.tabs{
+    width:100%;
+    margin: 0 40px;
+}
+.w3-red {
+    background-color: #9f1897 !important;
+}
+.tabs button{
+    background-color:#6b6b6c ;
+    border: 2px solid transparent;
+    color: white;
+    font-weight:bold;
+    cursor: pointer;
+    width: 250px;
+    padding: 10px 0;
+}
+
+  
+  .chart-container {
+      position: absolute;
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+  }
+  .paragraph{
+      margin-top: 320px;
+  }
+ .scroll{
+     height: 80px ;
+     overflow-y: scroll;
+     border: 1px solid gray;
+     padding: 10px;
+ }
+
+ .dummy__popup {
+    position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 80%;
+     width: 80%;
+     margin: auto;
+     background-color: white;
+     z-index: 99;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: black;
+     flex-direction: column;
+     visibility:hidden;
+ }
+ .dummy__popup button{
+     background-color: red;
+     color: white;
+     border: 2px solid red;
+     padding: 10px 30px;
+     border-radius: 30px;
+     font-weight: bold;
+ }
+ .dummy__popup button:hover{
+     cursor: pointer;
+     opacity: .8    ;
+ }
+ .tab1_popup{
+     display: none;
+ }
+ .graph_content {
+    float: right;
+    width: 40%;
+ }
+ .graph_content h3{
+     color: #9f1897 ;
+ }
+@media (max-width:768px){
+    .graph_content{
+       display: none    ;
+    }
+    .tabs img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .side__navbar{
+        display: none;
+        padding-top:100px;
+        position: absolute;
+        left: -200px;
+        transition: all .3s ease-in;    
+    }
+    .chart-container{
+        width: 80%;
+    }
+    .tabs button{
+        width: 100%;
+    }
+    .menu_icon{
+        float: right !important;
+        display: flex;
+        justify-content: right;
+    }
+    .menu_icon img{
+        visibility: visible !important;
+    }
+    .navlink{
+        margin-top: 20px;
+    }
+    
+}
+.menu_icon img{
+    object-fit: contain;
+    width: 40px;
+    visibility: hidden;
+}
+.menu_icon{
+    display: flex;
+}
