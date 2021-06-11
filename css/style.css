@@ -133,7 +133,9 @@ body{
     .navlink{
         margin-top: 20px;
     }
-    
+        .dummy__popup h1, .dummy__popup button{
+        margin-left: 40px;
+    }
 }
 .menu_icon img{
     object-fit: contain;
